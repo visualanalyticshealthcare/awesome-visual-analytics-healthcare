@@ -18,22 +18,15 @@ Related Awesome lists:
 
 (alphabetical order)
 
-- [Awesome Visual Analytics in Healthcare](#awesome-visual-analytics-in-healthcare)
-	- [Table of Contents](#table-of-contents)
-	- [Articles](#articles)
-	- [Books](#books)
-	- [Checklists \& Guidelines](#checklists--guidelines)
-	- [Collections](#collections)
-	- [Conferences](#conferences)
-	- [Courses](#courses)
-	- [Notable works](#notable-works)
-		- [Featured in AMIA Year in Review](#featured-in-amia-year-in-review)
-			- [2022](#2022)
-			- [2020](#2020)
-			- [2019](#2019)
-			- [2018](#2018)
-	- [Review Papers](#review-papers)
-	- [Tools](#tools)
+- [Articles](#articles)
+- [Books](#books)
+- [Checklists & Guidelines](#checklists--guidelines)
+- [Collections](#collections)
+- [Conferences](#conferences)
+- [Courses](#courses)
+- [Notable works](#notable-works)
+- [Review Papers](#review-papers)
+- [Tools](#tools)
 
 ## Articles
 
