@@ -3,7 +3,8 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A community-curated list of awesome resources for visual analytics in healthcare. This list will be of interest to wide audience, including, students, academics, practitioners and healthcare professionals.
-AMIA Visual Analytics Working Group maintains this list, although we do not endorse any resource in particular. We welcome suggestions as GitHub Pull Requests or Discussion posts.
+
+AMIA Visual Analytics Working Group maintains this list, although we do not endorse any resource in particular. We welcome suggestions as GitHub [Pull Requests](https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare/blob/main/contributing.md) or [Discussion posts](https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare/discussions) or via this [Airtable form (no login required)](https://airtable.com/shry5YQ14yHQEyw57).
 
 Related Awesome lists:
 
@@ -93,3 +94,7 @@ Related Awesome lists:
 - [CadenceEVA](https://github.com/VACLab/CadenceEVA) - a visual analytics platform for event sequence analysis
 - [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python Library for Healthcare Predictive Tasks
 - [SandDance](https://microsoft.github.io/SandDance/app/) - SandDance is a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
+
+---
+
+[Back to Table of Contents](#table-of-contents)
