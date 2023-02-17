@@ -26,7 +26,7 @@ Related Awesome lists:
 - [Conferences](#conferences)
 - [Courses](#courses)
 - [Notable works](#notable-works)
-- [Review Papers](#review-papers)
+- [Publications](#publications)
 - [Tools](#tools)
 
 ## Articles
@@ -83,18 +83,24 @@ Related Awesome lists:
 - [A visual analytics approach for pattern-recognition in patient-generated data](https://academic.oup.com/jamia/article-abstract/25/10/1366/5037318) by Daniel Feller, ..., Lena Mamykina from Columbia University on JAMIA - Authors developed Glucolyzer to help dieticians interpret glucose and meal data
 - [Eye-Tracking Study to Enhance Usability of Molecular Diagnostics Reports in Cancer Precision Medicine](https://ascopubs.org/doi/abs/10.1200/PO.17.00296) by Vishakha Sharma, ..., Subha Madhavan from Georgetown University on JCO Precision Oncology.
 
+
+# Visual Analytics 101
+
+
 ## Publications
 
 
 ### Academic Informatics
 
-### HCI / Human Factors / UI / UX
+### Human-Computer Interaction / Human-centered Design
 
 ### Consumer Health Informatics
 
 ### Clinical Decision Support
 
 ### Visual Analytics System
+
+### Review Paper
 
 - [EHR STAR: The State-of-the-art in Interactive EHR and PopHR Visualization](https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14424) by Qiru Wang & Robert Laramee from University of Nottingham on Computer Graphics Forum
 - [Evaluating visual analytics for health informatics applications: a systematic review from the American Medical Informatics Association Visual Analytics Working Group Task Force on Evaluation](https://academic.oup.com/jamia/article/26/4/314/5320044) by Danny Wu, ..., David Gotz from AMIA Visual Analytics Working Group on JAMIA
