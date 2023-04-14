@@ -49,6 +49,7 @@ Related Awesome lists:
 - [EHR STAR](https://ehr.wangqiru.com/table/) by Qiru Wang - a collection of literature and datasets included in the state-of-the-art (STAR) report, [EHR STAR: The State-of-the-art in Interactive EHR and PopHR Visualization](https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14424)
 - [GenoCAT](http://genocat.tools) by [Gehlenborg Lab](http://gehlenborglab.org) - a database of genomic visualization tools
 - [Visualization Design Studio](https://tinyurl.com/y6rlv72a) led by [Adriana Arcia](https://www.nursing.columbia.edu/profile/adriana-arcia-phd) more info on this [page](https://vis-studio.mailchimpsites.com).
+  - [A list of Online Visualization Resources](https://drive.google.com/file/d/1IlxBx_5JEZ2wVLcRXBmYz99nD2wYZuaZ/view) by Adriana Arcia
 
 ## Conferences
 
