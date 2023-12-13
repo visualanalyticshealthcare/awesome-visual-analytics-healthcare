@@ -60,11 +60,6 @@ Related Awesome lists:
 - [Data Analytics and Visualization in Health Care](https://www.edx.org/course/data-analytics-and-visualization-in-health-care) from Rochester Institute of Technology on edX
 - [Information Visualization Specialization](https://www.coursera.org/specializations/information-visualization) from New York University on Coursera (not specific to healthcare)
 
-## Visualization Design Studio
-
-- The Visualization Design Studio is co-lead by Dr. Adriana Arcia, PhD, RN, FAAN and Nat Benda, PhD. This group curates a newsletter and has a goal of providing scientist's with the ability to communicate effectively with a variety of audiences for health-related purposes using information and data representations.
-- More information at this link (https://vis-studio.mailchimpsites.com)
-
 ## Notable works
 
 ### Featured in AMIA Year in Review
