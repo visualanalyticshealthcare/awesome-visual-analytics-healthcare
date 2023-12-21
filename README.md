@@ -64,6 +64,10 @@ Related Awesome lists:
 
 ### Featured in AMIA Year in Review
 
+#### 2023
+
+- [Integrating statistical and visual analytic methods for bot identification of health-related survey data] (https://pubmed.ncbi.nlm.nih.gov/37419375/) by Annie T. Chen, ..., Yan Zhang from University of Washington and UT Austin. Journal of Biomedical Informatics, July 2023
+
 #### 2022
 
 - [Loon: Using Exemplars to Visualize Large-Scale Microscopy Data](https://ieeexplore.ieee.org/abstract/document/9552235/) by Devin Lange, ..., Alexander Lex from University of Utah on IEEE Transactions on Visualization and Computer Graphics - a visualization tool for analyzing drug screening data based on quantitative phase microscopy imaging for patient-specific cancer drug selection. [GitHub Repo](https://github.com/visdesignlab/Loon)
