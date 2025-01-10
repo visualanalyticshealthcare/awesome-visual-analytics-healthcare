@@ -66,7 +66,7 @@ Related Awesome lists:
 
 #### 2023
 
-- [Integrating statistical and visual analytic methods for bot identification of health-related survey data] (https://pubmed.ncbi.nlm.nih.gov/37419375/) by Annie T. Chen, ..., Yan Zhang from University of Washington and UT Austin. Journal of Biomedical Informatics, July 2023
+- [Integrating statistical and visual analytic methods for bot identification of health-related survey data](https://pubmed.ncbi.nlm.nih.gov/37419375/) by Annie T. Chen, ..., Yan Zhang from University of Washington and UT Austin. Journal of Biomedical Informatics, July 2023
 
 #### 2022
 
