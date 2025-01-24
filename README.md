@@ -64,6 +64,21 @@ Related Awesome lists:
 
 ### Featured in AMIA Year in Review
 
+#### 2024
+
+- [TrajVis: a visual clinical decision support system to translate artificial intelligence trajectory models in the precision management of chronic kidney disease](https://pubmed.ncbi.nlm.nih.gov/38916922/) by Zuotian Li, et al, J Am Med Inform Assoc. 2024 Nov 1;31(11):2474-2485. doi: 10.1093/jamia/ocae158. PMID: 38916922; PMCID: [PMC11491615](https://pmc.ncbi.nlm.nih.gov/articles/PMC11491615/).
+
+- [Hybrid visualization-based framework for depressive state detection and characterization of atypical patients](https://pubmed.ncbi.nlm.nih.gov/37926393/) by Leon Kopitar, et al, J Biomed Inform. 2023 Nov;147:104535. doi: 10.1016/j.jbi.2023.104535. Epub 2023 Nov 4. PMID: 37926393.
+
+- [Analysing disease trajectories in a cohort of 71,849 Patients: A visual analytics and statistical approach](https://pubmed.ncbi.nlm.nih.gov/37926393/) by Jon Kerexeta-Sarriegi, et al, Int J Med Inform. 2024 Aug;188:105466. doi: 10.1016/j.ijmedinf.2024.105466. Epub 2024 May 1. PMID: 38761458.
+
+- [Design of an interface to communicate artificial intelligence-based prognosis for patients with advanced solid tumors: a user-centered approach](https://pubmed.ncbi.nlm.nih.gov/37847666/) by Catherine J Staes, et al, J Am Med Inform Assoc. 2023 Dec 22;31(1):174-187. doi: 10.1093/jamia/ocad201. PMID: 37847666; PMCID: [PMC10746322](https://pmc.ncbi.nlm.nih.gov/articles/PMC10746322/).
+
+- [Inpatient nurses' preferences and decisions with risk information visualization](https://pubmed.ncbi.nlm.nih.gov/37903375/) by Alvin D Jeffery, et al, J Am Med Inform Assoc. 2023 Dec 22;31(1):61-69. doi: 10.1093/jamia/ocad209. PMID: 37903375; PMCID: PMC10746300.
+
+- [HealthPrism: A Visual Analytics System for Exploring Children's Physical and Mental Health Profiles with Multimodal Data](https://pubmed.ncbi.nlm.nih.gov/37874717/) by Zhihan Jiang, et al, IEEE Trans Vis Comput Graph. 2023 Oct 24;PP. doi: 10.1109/TVCG.2023.3326943. Epub ahead of print. PMID: 37874717.
+
+
 #### 2023
 
 - [Integrating statistical and visual analytic methods for bot identification of health-related survey data](https://pubmed.ncbi.nlm.nih.gov/37419375/) by Annie T. Chen, ..., Yan Zhang from University of Washington and UT Austin. Journal of Biomedical Informatics, July 2023
