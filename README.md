@@ -129,6 +129,7 @@ Related Awesome lists:
 ## Tools
 
 - [CadenceEVA](https://github.com/VACLab/CadenceEVA) - a visual analytics platform for event sequence analysis
+- [Hantascan](https://hantascan.com) - a live global hantavirus map showing reported cases, deaths, country totals, and outbreak locations.
 - [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python Library for Healthcare Predictive Tasks
 - [SandDance](https://microsoft.github.io/SandDance/app/) - SandDance is a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
 
