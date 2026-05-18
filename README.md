@@ -35,9 +35,11 @@ Related Awesome lists:
 - [Tableau for Healthcare](https://healthdataviz.com/resources/) by Daniel Benevento, Katherine Rowell, Janet Steeger
 - [Visualizing Health and Healthcare Data](https://healthdataviz.com/resources/) by Lindsay Betzendahl, Cambria Brown & Katherine Rowell
 
-## Checklists & Guidelines
-
-- [Development of a usability checklist for public health dashboards to identify violations of usability principles](https://academic.oup.com/jamia/article/29/11/1847/6670608) by Bahareh Ansari & Erika G Martin from University at Albany on JAMIA - A usability checklist for public health dashboards with 86 items covering 11 areas of considerations
+## Checklists & Guidelinesinciples, tools, and resources (not specific to healthcare).
+- [Data Visualization Design](https://guides.lib.berkeley.edu/data-visualization/design) - UC Berkeley Library guide on data visualization design principles, including chart selection, color, and accessibility (not specific to healthcare).
+- [Designing Effective Data Visualizations](https://dataservices.library.jhu.edu/wp-content/uploads/sites/41/2024/03/DesigningEffectiveDataVisualizations.pdf) ([guide page](https://dataservices.library.jhu.edu/data-visualization/)) - Johns Hopkins University Libraries guide on designing effective data visualizations, with companion PDF handout (not specific to healthcare).
+- [Data Visualization Guide](https://guides.library.yale.edu/datavisualization) - Yale University Library research guide covering data visualization.
+- [Development of a usability checklist for public health dashboards to identify violations of usability principles](https://academic.oup.com/jamia/article/29/11/1847/6670608) by Bahareh Ansari & Erika G Martin from University at Albany on JAMIA - A usability checklist for public health dashboards with 86 items covering 11 areas of considerations.
 - [The Development of Heuristics for Evaluation of Dashboard Visualizations](https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0038-1666842) by Dawn Dowding & Jacqueline A. Merrill from University of Manchester & Columbia University on Appl Clin Inform - A checklist of usability heuristics for evaluating information visualization systems that can contribute to assuring high quality in electronic data systems developed for health care.
 
 ## Collections
@@ -122,6 +124,9 @@ Related Awesome lists:
 ## Tools
 
 - [CadenceEVA](https://github.com/VACLab/CadenceEVA) - a visual analytics platform for event sequence analysis
+- [Colorblind palette comparison](https://davidmathlogic.com/colorblind/) by David Nichols - an interactive tool to preview and compare categorical color palettes under different types of color vision deficiency.
+- [Datawrapper - A detailed guide to colors in data vis style guides](https://www.datawrapper.de/blog/colors-for-data-vis-style-guides) - an extensive reference on building organizational color palettes for data visualization.
+- [Datawrapper - How to pick more beautiful colors for your data visualizations](https://www.datawrapper.de/blog/beautifulcolors) - practical guidance on choosing accessible and aesthetically effective colors for charts.
 - [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python Library for Healthcare Predictive Tasks
 - [SandDance](https://microsoft.github.io/SandDance/app/) - SandDance is a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
 
