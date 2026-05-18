@@ -17,7 +17,6 @@ Related Awesome lists:
 
 ## Table of Contents
 
-- [Visual Analytics 101](#visual-analytics-101)
 - [Books](#books)
 - [Checklists & Guidelines](#checklists--guidelines)
 - [Collections](#collections)
@@ -26,19 +25,17 @@ Related Awesome lists:
 - [Publications](#publications)
 - [Tools](#tools)
 
-## Visual Analytics 101
-
-
 ## Books
 
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html) by Claus O. Wilke (not specific to healthcare but freely accessible under the Creative Commons License)
 - [Tableau for Healthcare](https://healthdataviz.com/resources/) by Daniel Benevento, Katherine Rowell, Janet Steeger
 - [Visualizing Health and Healthcare Data](https://healthdataviz.com/resources/) by Lindsay Betzendahl, Cambria Brown & Katherine Rowell
 
-## Checklists & Guidelinesinciples, tools, and resources (not specific to healthcare).
+## Checklists & Guidelines
+
 - [Data Visualization Design](https://guides.lib.berkeley.edu/data-visualization/design) - UC Berkeley Library guide on data visualization design principles, including chart selection, color, and accessibility (not specific to healthcare).
 - [Designing Effective Data Visualizations](https://dataservices.library.jhu.edu/wp-content/uploads/sites/41/2024/03/DesigningEffectiveDataVisualizations.pdf) ([guide page](https://dataservices.library.jhu.edu/data-visualization/)) - Johns Hopkins University Libraries guide on designing effective data visualizations, with companion PDF handout (not specific to healthcare).
-- [Data Visualization Guide](https://guides.library.yale.edu/datavisualization) - Yale University Library research guide covering data visualization.
+- [Data Visualization Guide](https://guides.library.yale.edu/datavisualization) - Yale University Library research guide covering data visualization principles, tools, and resources.
 - [Development of a usability checklist for public health dashboards to identify violations of usability principles](https://academic.oup.com/jamia/article/29/11/1847/6670608) by Bahareh Ansari & Erika G Martin from University at Albany on JAMIA - A usability checklist for public health dashboards with 86 items covering 11 areas of considerations.
 - [The Development of Heuristics for Evaluation of Dashboard Visualizations](https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0038-1666842) by Dawn Dowding & Jacqueline A. Merrill from University of Manchester & Columbia University on Appl Clin Inform - A checklist of usability heuristics for evaluating information visualization systems that can contribute to assuring high quality in electronic data systems developed for health care.
 
