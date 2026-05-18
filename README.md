@@ -193,7 +193,6 @@ Related Awesome lists:
 AI-driven design generators and coding agents that can be used to prototype or implement healthcare data visualizations from natural-language prompts.
 
 - [Claude Code](https://www.anthropic.com/claude-code) by Anthropic - a command-line coding agent that can read, modify, and run code in your repository, suitable for building or extending visualization apps.
-- [Cursor](https://cursor.com/) - an AI-first IDE with agentic editing, useful for iterating on visualization code (D3, Plotly, React, etc.) inside a project.
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) by Google - an open-source command-line agent powered by Gemini models, for terminal-based coding and automation workflows.
 - [Google Gemini](https://gemini.google.com/) - Google's multimodal AI assistant for chat-based coding help, image/data understanding, and quick visualization sketches.
 - [Google Stitch](https://stitch.withgoogle.com/) - Google Labs experiment that turns natural-language prompts into UI designs, useful for rapidly prototyping dashboard layouts.
