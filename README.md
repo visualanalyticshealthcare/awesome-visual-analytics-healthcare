@@ -19,6 +19,7 @@ Related Awesome lists:
 
 (alphabetical order)
 
+- [Visual Analytics 101](#visual-analytics-101)
 - [Articles](#articles)
 - [Books](#books)
 - [Checklists & Guidelines](#checklists--guidelines)
@@ -28,6 +29,9 @@ Related Awesome lists:
 - [Notable works](#notable-works)
 - [Publications](#publications)
 - [Tools](#tools)
+
+## Visual Analytics 101
+
 
 ## Articles
 
@@ -104,9 +108,6 @@ Related Awesome lists:
 - [Eye-Tracking Study to Enhance Usability of Molecular Diagnostics Reports in Cancer Precision Medicine](https://ascopubs.org/doi/abs/10.1200/PO.17.00296) by Vishakha Sharma, ..., Subha Madhavan from Georgetown University on JCO Precision Oncology.
 
 
-# Visual Analytics 101
-
-
 ## Publications
 
 
@@ -132,6 +133,3 @@ Related Awesome lists:
 - [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python Library for Healthcare Predictive Tasks
 - [SandDance](https://microsoft.github.io/SandDance/app/) - SandDance is a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
 
----
-
-[Back to Table of Contents](#table-of-contents)
