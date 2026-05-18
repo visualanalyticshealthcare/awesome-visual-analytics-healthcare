@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
 
   <style>
@@ -15,24 +15,32 @@
       --r-main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
       --r-heading-font: var(--r-main-font);
       --r-main-font-size: 32px;
-      --r-main-color: #e8e8e8;
-      --r-heading-color: #6fa8ff;
-      --r-link-color: #8ec5ff;
-      --r-link-color-hover: #ffb454;
-      --r-background-color: #111418;
+      --r-main-color: #0a0a0a;
+      --r-heading-color: #0a2e6b;
+      --r-link-color: #06448a;
+      --r-link-color-hover: #c2255c;
+      --r-background-color: #ffffff;
     }
-    .reveal { font-size: 32px; }
-    .reveal h1 { font-size: 1.7em; letter-spacing: -0.02em; color: #6fa8ff; }
-    .reveal h2 { font-size: 1.25em; letter-spacing: -0.01em; color: #6fa8ff; }
-    .reveal h3 { font-size: 0.95em; color: #b6c2d1; }
+    .reveal { font-size: 32px; color: #0a0a0a; }
+    .reveal h1 { font-size: 1.7em; letter-spacing: -0.02em; color: #0a2e6b; }
+    .reveal h2 { font-size: 1.25em; letter-spacing: -0.01em; color: #0a2e6b; }
+    .reveal h3 { font-size: 0.95em; color: #1f1f1f; }
     .reveal ul { display: block; }
-    .reveal li { margin: 0.25em 0; line-height: 1.35; font-size: 0.78em; }
+    .reveal li { margin: 0.25em 0; line-height: 1.35; font-size: 0.78em; color: #111111; }
     .reveal li li { font-size: 0.95em; }
-    .reveal p { font-size: 0.82em; }
-    .reveal a { text-decoration: none; border-bottom: 1px dotted currentColor; color: #8ec5ff; }
-    .reveal a:hover { color: #ffb454; }
+    .reveal p { font-size: 0.82em; color: #111111; }
+    .reveal strong { color: #0a2e6b; }
+    .reveal a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+      border-bottom: none;
+      color: #06448a;
+      font-weight: 500;
+    }
+    .reveal a:hover { color: #c2255c; }
     .reveal section .meta {
-      color: #7a8290;
+      color: #4a4a4a;
       font-size: 0.55em;
       margin-top: 1em;
     }
@@ -44,16 +52,17 @@
     }
     .reveal .columns h3 {
       margin-top: 0;
-      border-bottom: 2px solid #6fa8ff;
+      border-bottom: 3px solid #0a2e6b;
       padding-bottom: 0.2em;
+      color: #0a2e6b;
     }
     .reveal blockquote {
-      border-left: 4px solid #6fa8ff;
+      border-left: 4px solid #0a2e6b;
       padding: 0.5em 1em;
-      background: #1c222b;
+      background: #eef3fb;
       font-size: 0.75em;
       text-align: left;
-      color: #cdd6e1;
+      color: #111111;
     }
     .reveal .badge {
       display: inline-block;
@@ -61,8 +70,8 @@
       padding: 0.1em 0.5em;
       margin-left: 0.4em;
       border-radius: 4px;
-      background: #6fa8ff;
-      color: #111418;
+      background: #0a2e6b;
+      color: #ffffff;
       vertical-align: middle;
       font-weight: 600;
     }
@@ -74,10 +83,10 @@
       align-items: center;
       text-align: center;
     }
-    .reveal section.title-slide h1 { color: #6fa8ff; margin-bottom: 0.4em; }
+    .reveal section.title-slide h1 { color: #0a2e6b; margin-bottom: 0.4em; }
     .reveal section.title-slide .subtitle {
       font-size: 0.6em;
-      color: #b6c2d1;
+      color: #1f1f1f;
       margin-top: 0.5em;
       max-width: 700px;
     }
@@ -97,7 +106,7 @@
       height: 120px;
     }
 
-    /* Subtle animated background */
+    /* Subtle animated background — kept very faint so it never reduces text contrast. */
     .bg-anim {
       position: fixed;
       inset: 0;
@@ -105,9 +114,9 @@
       overflow: hidden;
       pointer-events: none;
       background:
-        radial-gradient(ellipse at top left, rgba(111, 168, 255, 0.05), transparent 50%),
-        radial-gradient(ellipse at bottom right, rgba(255, 180, 84, 0.04), transparent 50%),
-        #111418;
+        radial-gradient(ellipse at top left, rgba(10, 46, 107, 0.04), transparent 55%),
+        radial-gradient(ellipse at bottom right, rgba(194, 37, 92, 0.03), transparent 55%),
+        #ffffff;
     }
     .bg-anim .blob {
       position: absolute;
@@ -116,31 +125,31 @@
       max-width: 900px;
       max-height: 900px;
       border-radius: 50%;
-      filter: blur(120px);
-      opacity: 0.18;
-      mix-blend-mode: screen;
+      filter: blur(140px);
+      opacity: 0.10;
+      mix-blend-mode: multiply;
       will-change: transform;
     }
     .bg-anim .blob.b1 {
-      background: radial-gradient(circle, #6fa8ff 0%, transparent 70%);
+      background: radial-gradient(circle, #0a2e6b 0%, transparent 70%);
       top: -15%;
       left: -10%;
       animation: drift1 28s ease-in-out infinite;
     }
     .bg-anim .blob.b2 {
-      background: radial-gradient(circle, #4a7fc8 0%, transparent 70%);
+      background: radial-gradient(circle, #06448a 0%, transparent 70%);
       bottom: -20%;
       right: -10%;
       animation: drift2 34s ease-in-out infinite;
     }
     .bg-anim .blob.b3 {
-      background: radial-gradient(circle, #2a4a78 0%, transparent 70%);
+      background: radial-gradient(circle, #88a6d2 0%, transparent 70%);
       top: 30%;
       right: 25%;
       width: 40vw;
       height: 40vw;
       animation: drift3 40s ease-in-out infinite;
-      opacity: 0.12;
+      opacity: 0.07;
     }
     @keyframes drift1 {
       0%, 100% { transform: translate(0, 0) scale(1); }
@@ -172,29 +181,31 @@
       display: flex;
       gap: 6px;
       padding: 6px 10px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(10, 46, 107, 0.2);
       border-radius: 999px;
       backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(10, 46, 107, 0.08);
       z-index: 50;
       font-family: var(--r-main-font);
     }
     .slides-toolbar button {
       background: transparent;
-      color: #cdd6e1;
+      color: #0a2e6b;
       border: none;
       padding: 4px 12px;
       font-size: 12px;
+      font-weight: 500;
       border-radius: 999px;
       cursor: pointer;
       transition: background 0.15s, color 0.15s;
     }
     .slides-toolbar button:hover {
-      background: rgba(255, 255, 255, 0.12);
-      color: #fff;
+      background: #0a2e6b;
+      color: #ffffff;
     }
     .slides-toolbar .toolbar-counter {
-      color: #7a8290;
+      color: #4a4a4a;
       font-size: 12px;
       padding: 4px 8px;
       align-self: center;
@@ -320,16 +331,7 @@
         </blockquote>
       </section>
 
-      <!-- 7. Courses -->
-      <section>
-        <h2>Courses</h2>
-        <ul>
-          <li><a href="https://www.edx.org/course/data-analytics-and-visualization-in-health-care">Data Analytics &amp; Visualization in Health Care</a> — RIT (edX)</li>
-          <li><a href="https://www.coursera.org/specializations/data-visualization-dv">Data Visualization Specialization</a> — Johns Hopkins University (Coursera)</li>
-        </ul>
-      </section>
-
-      <!-- 8. Publications — Year in Review + Best-Practice Papers -->
+      <!-- Publications — Year in Review + Best-Practice Papers -->
       <section>
         <h2>Publications</h2>
         <div class="columns">
@@ -390,7 +392,7 @@
               <li><a href="https://www.datawrapper.de/blog/colors-for-data-vis-style-guides">Datawrapper — colors in style guides</a></li>
               <li><a href="https://www.datawrapper.de/blog/beautifulcolors">Datawrapper — beautiful colors</a></li>
             </ul>
-            <h3>AI-Assisted &amp; Agent-based <span class="badge">NEW</span></h3>
+            <h3>AI-Assisted &amp; Agent-based</h3>
             <ul>
               <li><a href="https://www.anthropic.com/claude-code">Claude Code</a> — Anthropic CLI agent</li>
               <li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a> — Google open-source CLI agent</li>
