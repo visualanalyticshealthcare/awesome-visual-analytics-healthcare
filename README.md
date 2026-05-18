@@ -116,6 +116,7 @@ Related Awesome lists:
 
 - [EHR STAR: The State-of-the-art in Interactive EHR and PopHR Visualization](https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14424) by Qiru Wang & Robert Laramee from University of Nottingham on Computer Graphics Forum
 - [Evaluating visual analytics for health informatics applications: a systematic review from the American Medical Informatics Association Visual Analytics Working Group Task Force on Evaluation](https://academic.oup.com/jamia/article/26/4/314/5320044) by Danny Wu, ..., David Gotz from AMIA Visual Analytics Working Group on JAMIA
+- [Principles of Effective Data Visualization](https://pmc.ncbi.nlm.nih.gov/articles/PMC7733875/) by Stephen R. Midway from Louisiana State University on Patterns (N Y). 2020;1(9):100141. doi: 10.1016/j.patter.2020.100141. PMID: 33336199 - Ten foundational principles for creating effective scientific data visualizations, covering geometry selection, color use, uncertainty representation, and communication strategies (not specific to healthcare).
 - [Tasks, Techniques, and Tools for Genomic Data Visualization](https://onlinelibrary.wiley.com/doi/10.1111/cgf.13727) by Sabrina Nusrat, Theresa Harbig, and Nils Gehlenborg from Harvard University on Computer Graphics Forum
 
 ## Tools
