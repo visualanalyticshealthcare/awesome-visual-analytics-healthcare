@@ -26,7 +26,6 @@ Related Awesome lists:
 - [Collections](#collections)
 - [Conferences](#conferences)
 - [Courses](#courses)
-- [Notable works](#notable-works)
 - [Publications](#publications)
 - [Tools](#tools)
 
@@ -64,7 +63,7 @@ Related Awesome lists:
 - [Data Analytics and Visualization in Health Care](https://www.edx.org/course/data-analytics-and-visualization-in-health-care) from Rochester Institute of Technology on edX
 - [Information Visualization Specialization](https://www.coursera.org/specializations/information-visualization) from New York University on Coursera (not specific to healthcare)
 
-## Notable works
+## Publications
 
 ### Featured in AMIA Year in Review
 
@@ -106,10 +105,6 @@ Related Awesome lists:
 
 - [A visual analytics approach for pattern-recognition in patient-generated data](https://academic.oup.com/jamia/article-abstract/25/10/1366/5037318) by Daniel Feller, ..., Lena Mamykina from Columbia University on JAMIA - Authors developed Glucolyzer to help dieticians interpret glucose and meal data
 - [Eye-Tracking Study to Enhance Usability of Molecular Diagnostics Reports in Cancer Precision Medicine](https://ascopubs.org/doi/abs/10.1200/PO.17.00296) by Vishakha Sharma, ..., Subha Madhavan from Georgetown University on JCO Precision Oncology.
-
-
-## Publications
-
 
 ### Academic Informatics
 
