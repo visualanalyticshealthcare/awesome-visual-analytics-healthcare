@@ -29,7 +29,6 @@ Related Awesome lists:
 
 - [Effective Data Visualization: The Right Chart for the Right Data](https://stephanieevergreen.com/) by Stephanie Evergreen (not specific to healthcare)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html) by Claus O. Wilke (not specific to healthcare but freely accessible under the Creative Commons License)
-- [Show Me the Numbers: Designing Tables and Graphs to Enlighten](https://www.stephen-few.com/smtn.php) by Stephen Few (not specific to healthcare)
 - [Storytelling with Data: A Data Visualization Guide for Business Professionals](https://www.storytellingwithdata.com/books) by Cole Nussbaumer Knaflic (not specific to healthcare)
 - [Tableau for Healthcare](https://healthdataviz.com/resources/) by Daniel Benevento, Katherine Rowell, Janet Steeger
 - [The Functional Art: An Introduction to Information Graphics and Visualization](http://www.thefunctionalart.com/) by Alberto Cairo (not specific to healthcare)
@@ -51,7 +50,6 @@ Related Awesome lists:
 ### Misleading Visualizations & Common Pitfalls
 
 - [How to Spot Visualization Lies](https://flowingdata.com/2017/02/09/how-to-spot-visualization-lies/) by Nathan Yau on FlowingData - a field guide to identifying common deceptive chart patterns.
-- [Junk Charts – Trifecta Checkup: The Definitive Guide](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html) by Kaiser Fung - a framework for diagnosing what makes a chart fail (question, data, and visual form).
 - [Misleading Graph (Wikipedia)](https://en.wikipedia.org/wiki/Misleading_graph) - reference article cataloging common misleading-graph techniques (truncated axes, distorted scales, etc.).
 - [Replacement of the Aortic Root with a Pulmonary Autograft in Children and Young Adults with Aortic-Valve Disease](https://www.nejm.org/doi/full/10.1056/NEJM199401063300101) on New England Journal of Medicine - frequently cited as an "extra-dimension" 3D chart pitfall in healthcare visualization (not specific to healthcare best practices, but a healthcare-domain example of misleading design).
 - [Why the National Review's global temperature graph is so misleading](https://www.washingtonpost.com/news/the-fix/wp/2015/12/14/why-the-national-reviews-global-temperature-graph-is-so-misleading/) on The Washington Post - canonical example of a scaled / compressed y-axis distorting interpretation.
@@ -196,6 +194,8 @@ AI-driven design generators and coding agents that can be used to prototype or i
 
 - [Claude Code](https://www.anthropic.com/claude-code) by Anthropic - a command-line coding agent that can read, modify, and run code in your repository, suitable for building or extending visualization apps.
 - [Cursor](https://cursor.com/) - an AI-first IDE with agentic editing, useful for iterating on visualization code (D3, Plotly, React, etc.) inside a project.
+- [Gemini CLI](https://github.com/google-gemini/gemini-cli) by Google - an open-source command-line agent powered by Gemini models, for terminal-based coding and automation workflows.
 - [Google Antigravity](https://antigravity.google/) - Google's AI-powered development platform for agentic software building.
+- [Google Gemini](https://gemini.google.com/) - Google's multimodal AI assistant for chat-based coding help, image/data understanding, and quick visualization sketches.
 - [Google Stitch](https://stitch.withgoogle.com/) - Google Labs experiment that turns natural-language prompts into UI designs, useful for rapidly prototyping dashboard layouts.
 

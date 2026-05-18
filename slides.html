@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Awesome Visual Analytics in Healthcare — Overview</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+
+  <style>
+    :root {
+      --r-main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --r-heading-font: var(--r-main-font);
+      --r-main-font-size: 32px;
+      --r-main-color: #e8e8e8;
+      --r-heading-color: #6fa8ff;
+      --r-link-color: #8ec5ff;
+      --r-link-color-hover: #ffb454;
+      --r-background-color: #111418;
+    }
+    .reveal { font-size: 32px; }
+    .reveal h1 { font-size: 1.7em; letter-spacing: -0.02em; color: #6fa8ff; }
+    .reveal h2 { font-size: 1.25em; letter-spacing: -0.01em; color: #6fa8ff; }
+    .reveal h3 { font-size: 0.95em; color: #b6c2d1; }
+    .reveal ul { display: block; }
+    .reveal li { margin: 0.25em 0; line-height: 1.35; font-size: 0.78em; }
+    .reveal li li { font-size: 0.95em; }
+    .reveal p { font-size: 0.82em; }
+    .reveal a { text-decoration: none; border-bottom: 1px dotted currentColor; color: #8ec5ff; }
+    .reveal a:hover { color: #ffb454; }
+    .reveal section .meta {
+      color: #7a8290;
+      font-size: 0.55em;
+      margin-top: 1em;
+    }
+    .reveal .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5em;
+      text-align: left;
+    }
+    .reveal .columns h3 {
+      margin-top: 0;
+      border-bottom: 2px solid #6fa8ff;
+      padding-bottom: 0.2em;
+    }
+    .reveal blockquote {
+      border-left: 4px solid #6fa8ff;
+      padding: 0.5em 1em;
+      background: #1c222b;
+      font-size: 0.75em;
+      text-align: left;
+      color: #cdd6e1;
+    }
+    .reveal .badge {
+      display: inline-block;
+      font-size: 0.55em;
+      padding: 0.1em 0.5em;
+      margin-left: 0.4em;
+      border-radius: 4px;
+      background: #6fa8ff;
+      color: #111418;
+      vertical-align: middle;
+      font-weight: 600;
+    }
+    .reveal section.title-slide {
+      height: 100%;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .reveal section.title-slide h1 { color: #6fa8ff; margin-bottom: 0.4em; }
+    .reveal section.title-slide .subtitle {
+      font-size: 0.6em;
+      color: #b6c2d1;
+      margin-top: 0.5em;
+      max-width: 700px;
+    }
+
+    /* QR code — pinned to viewport bottom-right, only visible on slides that contain it. */
+    .qr-badge {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 40;
+      text-decoration: none;
+      border: none;
+    }
+    .qr-badge .qr-img {
+      display: block;
+      width: 120px;
+      height: 120px;
+    }
+
+    /* Subtle animated background */
+    .bg-anim {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse at top left, rgba(111, 168, 255, 0.05), transparent 50%),
+        radial-gradient(ellipse at bottom right, rgba(255, 180, 84, 0.04), transparent 50%),
+        #111418;
+    }
+    .bg-anim .blob {
+      position: absolute;
+      width: 60vw;
+      height: 60vw;
+      max-width: 900px;
+      max-height: 900px;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.18;
+      mix-blend-mode: screen;
+      will-change: transform;
+    }
+    .bg-anim .blob.b1 {
+      background: radial-gradient(circle, #6fa8ff 0%, transparent 70%);
+      top: -15%;
+      left: -10%;
+      animation: drift1 28s ease-in-out infinite;
+    }
+    .bg-anim .blob.b2 {
+      background: radial-gradient(circle, #4a7fc8 0%, transparent 70%);
+      bottom: -20%;
+      right: -10%;
+      animation: drift2 34s ease-in-out infinite;
+    }
+    .bg-anim .blob.b3 {
+      background: radial-gradient(circle, #2a4a78 0%, transparent 70%);
+      top: 30%;
+      right: 25%;
+      width: 40vw;
+      height: 40vw;
+      animation: drift3 40s ease-in-out infinite;
+      opacity: 0.12;
+    }
+    @keyframes drift1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33%      { transform: translate(8vw, 6vh) scale(1.08); }
+      66%      { transform: translate(-4vw, 10vh) scale(0.95); }
+    }
+    @keyframes drift2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      40%      { transform: translate(-10vw, -8vh) scale(1.1); }
+      75%      { transform: translate(6vw, -4vh) scale(0.92); }
+    }
+    @keyframes drift3 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50%      { transform: translate(-6vw, 8vh) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bg-anim .blob { animation: none; }
+    }
+    @media print {
+      .bg-anim { display: none; }
+    }
+
+    /* Custom bottom toolbar */
+    .slides-toolbar {
+      position: fixed;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      padding: 6px 10px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+      z-index: 50;
+      font-family: var(--r-main-font);
+    }
+    .slides-toolbar button {
+      background: transparent;
+      color: #cdd6e1;
+      border: none;
+      padding: 4px 12px;
+      font-size: 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .slides-toolbar button:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+    }
+    .slides-toolbar .toolbar-counter {
+      color: #7a8290;
+      font-size: 12px;
+      padding: 4px 8px;
+      align-self: center;
+      min-width: 3em;
+      text-align: center;
+    }
+    @media print {
+      .slides-toolbar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-anim" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 1. Title -->
+      <section class="title-slide">
+        <h1>Awesome Visual Analytics<br>in Healthcare</h1>
+        <div class="subtitle">
+          A community-curated list of resources for visual analytics in healthcare.<br>
+          Maintained by the <strong>AMIA Visual Analytics Working Group</strong>.
+        </div>
+        <p class="meta">
+          <a href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare">github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare</a>
+        </p>
+        <a class="qr-badge" style="position: fixed; right: 24px; bottom: 24px;" href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare" target="_blank" rel="noopener">
+          <img class="qr-img" alt="QR code linking to the GitHub repository"
+               src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=8&bgcolor=ffffff&color=111418&data=https%3A%2F%2Fgithub.com%2Fvisualanalyticshealthcare%2Fawesome-visual-analytics-healthcare">
+        </a>
+      </section>
+
+      <!-- 2. What's inside -->
+      <section>
+        <h2>What's inside</h2>
+        <div class="columns">
+          <div>
+            <h3>Foundations</h3>
+            <ul>
+              <li>Books</li>
+              <li>Courses</li>
+              <li>Checklists &amp; Guidelines</li>
+              <li>Misleading-viz examples ("NOT TO DO")</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Research &amp; Practice</h3>
+            <ul>
+              <li>Publications (incl. AMIA Year-in-Review)</li>
+              <li>Conferences</li>
+              <li>Collections of curated work</li>
+              <li>Tools — including <strong>AI agent-based</strong></li>
+            </ul>
+          </div>
+        </div>
+        <p class="meta">Open via PRs, GitHub Discussions, or the Airtable form.</p>
+      </section>
+
+      <!-- 3. Books -->
+      <section>
+        <h2>Books</h2>
+        <ul>
+          <li><a href="https://clauswilke.com/dataviz/index.html">Fundamentals of Data Visualization</a> — Claus O. Wilke <em>(free, CC)</em></li>
+          <li><a href="http://www.thefunctionalart.com/">The Functional Art</a> — Alberto Cairo</li>
+          <li><a href="https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/">The Visual Display of Quantitative Information</a> — Edward R. Tufte</li>
+          <li><a href="https://www.storytellingwithdata.com/books">Storytelling with Data</a> — Cole Nussbaumer Knaflic</li>
+          <li><a href="https://flowingdata.com/visualize-this/">Visualize This</a> — Nathan Yau</li>
+          <li><a href="https://stephanieevergreen.com/">Effective Data Visualization</a> — Stephanie Evergreen</li>
+          <li><strong>Healthcare-specific:</strong>
+            <ul>
+              <li><a href="https://healthdataviz.com/resources/">Visualizing Health and Healthcare Data</a> — Betzendahl, Brown &amp; Rowell</li>
+              <li><a href="https://healthdataviz.com/resources/">Tableau for Healthcare</a> — Benevento, Rowell, Steeger</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. Checklists & Guidelines -->
+      <section>
+        <h2>Checklists &amp; Guidelines</h2>
+        <h3>Guides &amp; Principles</h3>
+        <ul>
+          <li><a href="https://dataservices.library.jhu.edu/data-visualization/">Designing Effective Data Visualizations</a> — Johns Hopkins University Libraries</li>
+          <li><a href="https://guides.lib.berkeley.edu/data-visualization/design">Data Visualization Design</a> — UC Berkeley Library</li>
+          <li><a href="https://guides.library.yale.edu/datavisualization">Data Visualization Guide</a> — Yale University Library</li>
+          <li><a href="https://www.interaction-design.org/literature/article/visual-mapping-the-elements-of-information-visualization">Visual Mapping</a> — Interaction Design Foundation</li>
+          <li><a href="https://academic.oup.com/jamia/article/29/11/1847/6670608">Usability checklist for public-health dashboards</a> — Ansari &amp; Martin, <em>JAMIA</em></li>
+          <li><a href="https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0038-1666842">Heuristics for evaluating dashboard visualizations</a> — Dowding &amp; Merrill, <em>Appl Clin Inform</em></li>
+        </ul>
+      </section>
+
+      <!-- 5. NOT TO DO + Bad-Chart Galleries -->
+      <section>
+        <h2>NOT TO DO — Misleading Visualizations</h2>
+        <div class="columns">
+          <div>
+            <h3>Common Pitfalls</h3>
+            <ul>
+              <li><a href="https://flowingdata.com/2017/02/09/how-to-spot-visualization-lies/">How to Spot Visualization Lies</a> — FlowingData (Nathan Yau)</li>
+              <li><a href="https://en.wikipedia.org/wiki/Misleading_graph">Misleading Graph</a> — Wikipedia reference</li>
+              <li><a href="https://www.washingtonpost.com/news/the-fix/wp/2015/12/14/why-the-national-reviews-global-temperature-graph-is-so-misleading/">Scaled-axis pitfall</a> — Washington Post</li>
+              <li><a href="https://www.nejm.org/doi/full/10.1056/NEJM199401063300101">"Extra-dimension" 3D chart pitfall</a> — NEJM</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Bad-Chart Galleries</h3>
+            <ul>
+              <li><a href="https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/">Karl Broman — Top Ten Worst Graphs</a></li>
+              <li><a href="https://www.junkcharts.com/">Junk Charts</a> — Kaiser Fung</li>
+              <li><a href="https://www.reddit.com/r/dataisugly/">r/dataisugly</a></li>
+              <li><a href="http://viz.wtf/">viz.wtf</a></li>
+            </ul>
+          </div>
+        </div>
+        <blockquote>
+          Same dataset, very different stories — see <a href="https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/">"One Dataset Visualized 25 Ways"</a>
+          and <a href="https://doi.org/10.1371/journal.pbio.1002128">"Same Stats, Different Graphs"</a> (the DataSaurus).
+        </blockquote>
+      </section>
+
+      <!-- 7. Courses -->
+      <section>
+        <h2>Courses</h2>
+        <ul>
+          <li><a href="https://www.edx.org/course/data-analytics-and-visualization-in-health-care">Data Analytics &amp; Visualization in Health Care</a> — RIT (edX)</li>
+          <li><a href="https://www.coursera.org/specializations/information-visualization">Information Visualization Specialization</a> — NYU (Coursera)</li>
+        </ul>
+      </section>
+
+      <!-- 8. Publications — Year in Review + Best-Practice Papers -->
+      <section>
+        <h2>Publications</h2>
+        <div class="columns">
+          <div>
+            <h3>Year in Review Highlights</h3>
+            <ul>
+              <li><strong>2024</strong> — <a href="https://pubmed.ncbi.nlm.nih.gov/38916922/">TrajVis</a>: AI trajectory models for CKD (Li et al., <em>JAMIA</em>)</li>
+              <li><strong>2024</strong> — <a href="https://pubmed.ncbi.nlm.nih.gov/37874717/">HealthPrism</a>: children's physical &amp; mental health (Jiang et al., <em>TVCG</em>)</li>
+              <li><strong>2023</strong> — <a href="https://pubmed.ncbi.nlm.nih.gov/37419375/">Bot identification in health surveys</a> (Chen et al., <em>JBI</em>)</li>
+              <li><strong>2022</strong> — <a href="https://ieeexplore.ieee.org/abstract/document/9555810/">VBridge</a>: explaining healthcare ML models (Cheng et al.)</li>
+              <li><strong>2022</strong> — <a href="https://ieeexplore.ieee.org/abstract/document/9552235/">Loon</a>: exemplar-based microscopy analysis (Lange et al.)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Key Best-Practice Papers</h3>
+            <ul>
+              <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7733875/">Principles of Effective Data Visualization</a> — Midway, <em>Patterns</em> 2020</li>
+              <li><a href="https://doi.org/10.1093/jamia/ocz190">Best practices for fall-prevention dashboards</a> — Khasnabish et al., <em>JAMIA</em> 2020</li>
+              <li><a href="https://academic.oup.com/jamia/article/26/4/314/5320044">Evaluating visual analytics for health informatics</a> — Wu et al., AMIA VA WG, <em>JAMIA</em></li>
+              <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14424">EHR STAR: State-of-the-art</a> — Wang &amp; Laramee, <em>CGF</em></li>
+              <li><a href="https://ieeexplore.ieee.org/abstract/document/7466736">Data-Driven Healthcare: Challenges &amp; Opportunities</a> — Gotz &amp; Borland, IEEE CG&amp;A</li>
+            </ul>
+          </div>
+        </div>
+        <p class="meta">See the README for the full list, including 2018 / 2019 / 2020 highlights.</p>
+      </section>
+
+      <!-- 10. Tools -->
+      <section>
+        <h2>Tools</h2>
+        <div class="columns">
+          <div>
+            <h3>Healthcare &amp; VA platforms</h3>
+            <ul>
+              <li><a href="https://github.com/VACLab/CadenceEVA">CadenceEVA</a></li>
+              <li><a href="https://github.com/sunlabuiuc/PyHealth">PyHealth</a></li>
+              <li><a href="https://microsoft.github.io/SandDance/app/">SandDance</a></li>
+            </ul>
+            <h3>General-purpose platforms</h3>
+            <ul>
+              <li><a href="https://www.tableau.com/">Tableau</a></li>
+              <li><a href="https://observablehq.com/">Observable</a></li>
+              <li><a href="https://dash.plotly.com/">Plotly Dash</a></li>
+            </ul>
+            <h3>Chart catalogs &amp; pickers</h3>
+            <ul>
+              <li><a href="https://datavizproject.com/">Data Viz Project</a></li>
+              <li><a href="https://datavizcatalogue.com/index.html">Data Visualisation Catalogue</a></li>
+              <li><a href="https://www.data-to-viz.com/">From Data to Viz</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Color &amp; accessibility</h3>
+            <ul>
+              <li><a href="https://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis</a></li>
+              <li><a href="http://www.colororacle.org/">Color Oracle</a></li>
+              <li><a href="https://davidmathlogic.com/colorblind/">Mathlogic — Colorblind palette</a></li>
+              <li><a href="https://www.datawrapper.de/blog/colors-for-data-vis-style-guides">Datawrapper — colors in style guides</a></li>
+              <li><a href="https://www.datawrapper.de/blog/beautifulcolors">Datawrapper — beautiful colors</a></li>
+            </ul>
+            <h3>AI-Assisted &amp; Agent-based <span class="badge">NEW</span></h3>
+            <ul>
+              <li><a href="https://www.anthropic.com/claude-code">Claude Code</a> — Anthropic CLI agent</li>
+              <li><a href="https://cursor.com/">Cursor</a> — AI-first IDE</li>
+              <li><a href="https://github.com/google-gemini/gemini-cli">Gemini CLI</a> — Google open-source CLI agent</li>
+              <li><a href="https://antigravity.google/">Google Antigravity</a></li>
+              <li><a href="https://gemini.google.com/">Google Gemini</a> — chat &amp; multimodal assistant</li>
+              <li><a href="https://stitch.withgoogle.com/">Google Stitch</a> — prompt-to-UI</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Closing -->
+      <section class="title-slide">
+        <h1>Contribute</h1>
+        <p>Suggestions welcome via:</p>
+        <ul style="list-style:none; padding-left:0;">
+          <li><a href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare/issues/new">Submit a GitHub Issue</a></li>
+          <li><a href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare/pulls">Open a Pull Request</a></li>
+          <li><a href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare/discussions">Start a GitHub Discussion</a></li>
+        </ul>
+        <p class="meta">
+          Maintained by the AMIA Visual Analytics Working Group.<br>
+          <a href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare">github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare</a>
+        </p>
+        <a class="qr-badge" style="position: fixed; right: 24px; bottom: 24px;" href="https://github.com/visualanalyticshealthcare/awesome-visual-analytics-healthcare" target="_blank" rel="noopener">
+          <img class="qr-img" alt="QR code linking to the GitHub repository"
+               src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=8&bgcolor=ffffff&color=111418&data=https%3A%2F%2Fgithub.com%2Fvisualanalyticshealthcare%2Fawesome-visual-analytics-healthcare">
+        </a>
+      </section>
+
+    </div>
+  </div>
+
+  <div class="slides-toolbar" role="toolbar" aria-label="Slide navigation">
+    <button type="button" id="tb-home" title="Go to first slide">⏮ Home</button>
+    <button type="button" id="tb-prev" title="Previous slide">◀ Prev</button>
+    <span class="toolbar-counter" id="tb-counter">1 / 1</span>
+    <button type="button" id="tb-next" title="Next slide">Next ▶</button>
+    <button type="button" id="tb-end" title="Go to last slide">End ⏭</button>
+    <button type="button" id="tb-overview" title="Toggle overview (Esc)">⊞ Overview</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      controls: true,
+      progress: true,
+      center: false,
+      plugins: [ RevealHighlight, RevealNotes ]
+    }).then(() => {
+      const counter = document.getElementById('tb-counter');
+      const updateCounter = () => {
+        const indices = Reveal.getIndices();
+        const total = Reveal.getTotalSlides();
+        counter.textContent = `${indices.h + 1} / ${total}`;
+      };
+      Reveal.on('slidechanged', updateCounter);
+      updateCounter();
+
+      document.getElementById('tb-home').addEventListener('click', () => Reveal.slide(0));
+      document.getElementById('tb-prev').addEventListener('click', () => Reveal.prev());
+      document.getElementById('tb-next').addEventListener('click', () => Reveal.next());
+      document.getElementById('tb-end').addEventListener('click', () => Reveal.slide(Reveal.getTotalSlides() - 1));
+      document.getElementById('tb-overview').addEventListener('click', () => Reveal.toggleOverview());
+    });
+  </script>
+</body>
+</html>
