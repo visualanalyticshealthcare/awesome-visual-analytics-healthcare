@@ -94,7 +94,7 @@ Related Awesome lists:
 ## Courses
 
 - [Data Analytics and Visualization in Health Care](https://www.edx.org/course/data-analytics-and-visualization-in-health-care) from Rochester Institute of Technology on edX
-- [Information Visualization Specialization](https://www.coursera.org/specializations/information-visualization) from New York University on Coursera (not specific to healthcare)
+- [Data Visualization Specialization](https://www.coursera.org/specializations/data-visualization-dv) from Johns Hopkins University on Coursera - covers foundational principles, specialized techniques, and practical applications for creating impactful visualizations (not specific to healthcare).
 
 ## Publications
 
