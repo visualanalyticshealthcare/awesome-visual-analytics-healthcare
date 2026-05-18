@@ -49,6 +49,8 @@ Related Awesome lists:
 
 ## Conferences
 
+- [ACM CHI](https://chi.acm.org) - the ACM CHI Conference on Human Factors in Computing Systems, the premier international conference on Human-Computer Interaction, hosted annually by ACM SIGCHI.
+- [IEEE VIS](https://ieeevis.org) - the premier forum for advances in visualization and visual analytics, hosting the IEEE Transactions on Visualization and Computer Graphics (TVCG) conference track annually.
 - [VAHC Workshop](https://www.visualanalyticshealthcare.org) - Visual Analytics in Healthcare Workshop is an annual academic event hosted alternatively at AMIA (on even years) and IEEE VIS (on odd years). The workshop is dedicated to the study of visual analytics in healthcare. The workshop is a forum for researchers and practitioners to present and discuss their work, and to identify research challenges and opportunities in the field.
 
 ## Courses
