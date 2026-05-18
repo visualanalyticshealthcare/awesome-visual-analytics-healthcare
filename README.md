@@ -17,10 +17,7 @@ Related Awesome lists:
 
 ## Table of Contents
 
-(alphabetical order)
-
 - [Visual Analytics 101](#visual-analytics-101)
-- [Articles](#articles)
 - [Books](#books)
 - [Checklists & Guidelines](#checklists--guidelines)
 - [Collections](#collections)
@@ -31,10 +28,6 @@ Related Awesome lists:
 
 ## Visual Analytics 101
 
-
-## Articles
-
-- [Data-Driven Healthcare: Challenges and Opportunities for Interactive Visualization](https://ieeexplore.ieee.org/abstract/document/7466736) by David Gotz & David Borland from University of North Carolina at Chapel Hill on IEEE Computer Graphics and Applications
 
 ## Books
 
@@ -107,6 +100,8 @@ Related Awesome lists:
 - [Eye-Tracking Study to Enhance Usability of Molecular Diagnostics Reports in Cancer Precision Medicine](https://ascopubs.org/doi/abs/10.1200/PO.17.00296) by Vishakha Sharma, ..., Subha Madhavan from Georgetown University on JCO Precision Oncology.
 
 ### Academic Informatics
+
+- [Data-Driven Healthcare: Challenges and Opportunities for Interactive Visualization](https://ieeexplore.ieee.org/abstract/document/7466736) by David Gotz & David Borland from University of North Carolina at Chapel Hill on IEEE Computer Graphics and Applications
 
 ### Human-Computer Interaction / Human-centered Design
 
