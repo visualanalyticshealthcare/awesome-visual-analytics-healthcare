@@ -164,15 +164,38 @@ Related Awesome lists:
 
 ## Tools
 
-- [CadenceEVA](https://github.com/VACLab/CadenceEVA) - a visual analytics platform for event sequence analysis
+### Chart Catalogs & Pickers
+
+- [Data Viz Project](https://datavizproject.com/) - a catalog of chart types with filters by data shape, function, and family, useful for picking the right chart.
+- [Data Visualisation Catalogue](https://datavizcatalogue.com/index.html) by Severino Ribecca - a catalog of visualization methods organized by the task they support.
+- [From Data to Viz](https://www.data-to-viz.com/) - a decision-tree explorer that recommends suitable chart types based on the structure of your data, with code examples.
+
+### Healthcare & Visual Analytics Platforms
+
+- [CadenceEVA](https://github.com/VACLab/CadenceEVA) - a visual analytics platform for event sequence analysis.
+- [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python library for healthcare predictive tasks.
+- [SandDance](https://microsoft.github.io/SandDance/app/) - a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
+
+### General-Purpose Platforms
+
+- [Observable](https://observablehq.com/) - a collaborative notebook platform for building reactive data visualizations in JavaScript, widely used for prototyping bespoke charts.
+- [Plotly Dash](https://dash.plotly.com/) - an open-source Python framework for building analytical web applications and interactive dashboards.
+- [Tableau](https://www.tableau.com/) - a widely used commercial BI and data visualization platform; see also the "Tableau for Healthcare" book listed under Books.
+
+### Color & Accessibility
+
 - [Coblis – Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) - upload an image and preview how it appears under different forms of color vision deficiency.
 - [Color Oracle](http://www.colororacle.org/) - free desktop color-blindness simulator (macOS / Windows / Linux) that applies a full-screen filter for designers.
 - [Colorblind palette comparison](https://davidmathlogic.com/colorblind/) by David Nichols - an interactive tool to preview and compare categorical color palettes under different types of color vision deficiency.
-- [Data Viz Project](https://datavizproject.com/) - a catalog of chart types with filters by data shape, function, and family, useful for picking the right chart.
-- [Data Visualisation Catalogue](https://datavizcatalogue.com/index.html) by Severino Ribecca - a catalog of visualization methods organized by the task they support.
 - [Datawrapper - A detailed guide to colors in data vis style guides](https://www.datawrapper.de/blog/colors-for-data-vis-style-guides) - an extensive reference on building organizational color palettes for data visualization.
 - [Datawrapper - How to pick more beautiful colors for your data visualizations](https://www.datawrapper.de/blog/beautifulcolors) - practical guidance on choosing accessible and aesthetically effective colors for charts.
-- [From Data to Viz](https://www.data-to-viz.com/) - a decision-tree explorer that recommends suitable chart types based on the structure of your data, with code examples.
-- [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python Library for Healthcare Predictive Tasks
-- [SandDance](https://microsoft.github.io/SandDance/app/) - SandDance is a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
+
+### AI-Assisted & Agent-based
+
+AI-driven design generators and coding agents that can be used to prototype or implement healthcare data visualizations from natural-language prompts.
+
+- [Claude Code](https://www.anthropic.com/claude-code) by Anthropic - a command-line coding agent that can read, modify, and run code in your repository, suitable for building or extending visualization apps.
+- [Cursor](https://cursor.com/) - an AI-first IDE with agentic editing, useful for iterating on visualization code (D3, Plotly, React, etc.) inside a project.
+- [Google Antigravity](https://antigravity.google/) - Google's AI-powered development platform for agentic software building.
+- [Google Stitch](https://stitch.withgoogle.com/) - Google Labs experiment that turns natural-language prompts into UI designs, useful for rapidly prototyping dashboard layouts.
 
