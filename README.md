@@ -27,24 +27,65 @@ Related Awesome lists:
 
 ## Books
 
+- [Effective Data Visualization: The Right Chart for the Right Data](https://stephanieevergreen.com/) by Stephanie Evergreen (not specific to healthcare)
 - [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html) by Claus O. Wilke (not specific to healthcare but freely accessible under the Creative Commons License)
+- [Show Me the Numbers: Designing Tables and Graphs to Enlighten](https://www.stephen-few.com/smtn.php) by Stephen Few (not specific to healthcare)
+- [Storytelling with Data: A Data Visualization Guide for Business Professionals](https://www.storytellingwithdata.com/books) by Cole Nussbaumer Knaflic (not specific to healthcare)
 - [Tableau for Healthcare](https://healthdataviz.com/resources/) by Daniel Benevento, Katherine Rowell, Janet Steeger
+- [The Functional Art: An Introduction to Information Graphics and Visualization](http://www.thefunctionalart.com/) by Alberto Cairo (not specific to healthcare)
+- [The Visual Display of Quantitative Information](https://www.edwardtufte.com/book/the-visual-display-of-quantitative-information/) by Edward R. Tufte (not specific to healthcare)
+- [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://flowingdata.com/visualize-this/) by Nathan Yau (not specific to healthcare)
 - [Visualizing Health and Healthcare Data](https://healthdataviz.com/resources/) by Lindsay Betzendahl, Cambria Brown & Katherine Rowell
 
 ## Checklists & Guidelines
+
+### Guides & Principles
 
 - [Data Visualization Design](https://guides.lib.berkeley.edu/data-visualization/design) - UC Berkeley Library guide on data visualization design principles, including chart selection, color, and accessibility (not specific to healthcare).
 - [Designing Effective Data Visualizations](https://dataservices.library.jhu.edu/wp-content/uploads/sites/41/2024/03/DesigningEffectiveDataVisualizations.pdf) ([guide page](https://dataservices.library.jhu.edu/data-visualization/)) - Johns Hopkins University Libraries guide on designing effective data visualizations, with companion PDF handout (not specific to healthcare).
 - [Data Visualization Guide](https://guides.library.yale.edu/datavisualization) - Yale University Library research guide covering data visualization principles, tools, and resources.
 - [Development of a usability checklist for public health dashboards to identify violations of usability principles](https://academic.oup.com/jamia/article/29/11/1847/6670608) by Bahareh Ansari & Erika G Martin from University at Albany on JAMIA - A usability checklist for public health dashboards with 86 items covering 11 areas of considerations.
 - [The Development of Heuristics for Evaluation of Dashboard Visualizations](https://www.thieme-connect.com/products/ejournals/html/10.1055/s-0038-1666842) by Dawn Dowding & Jacqueline A. Merrill from University of Manchester & Columbia University on Appl Clin Inform - A checklist of usability heuristics for evaluating information visualization systems that can contribute to assuring high quality in electronic data systems developed for health care.
+- [Visual Mapping – The Elements of Information Visualization](https://www.interaction-design.org/literature/article/visual-mapping-the-elements-of-information-visualization) by the Interaction Design Foundation - introductory article on the visual encoding building blocks of information visualization (not specific to healthcare).
+
+### Misleading Visualizations & Common Pitfalls
+
+- [How to Spot Visualization Lies](https://flowingdata.com/2017/02/09/how-to-spot-visualization-lies/) by Nathan Yau on FlowingData - a field guide to identifying common deceptive chart patterns.
+- [Junk Charts – Trifecta Checkup: The Definitive Guide](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html) by Kaiser Fung - a framework for diagnosing what makes a chart fail (question, data, and visual form).
+- [Misleading Graph (Wikipedia)](https://en.wikipedia.org/wiki/Misleading_graph) - reference article cataloging common misleading-graph techniques (truncated axes, distorted scales, etc.).
+- [Replacement of the Aortic Root with a Pulmonary Autograft in Children and Young Adults with Aortic-Valve Disease](https://www.nejm.org/doi/full/10.1056/NEJM199401063300101) on New England Journal of Medicine - frequently cited as an "extra-dimension" 3D chart pitfall in healthcare visualization (not specific to healthcare best practices, but a healthcare-domain example of misleading design).
+- [Why the National Review's global temperature graph is so misleading](https://www.washingtonpost.com/news/the-fix/wp/2015/12/14/why-the-national-reviews-global-temperature-graph-is-so-misleading/) on The Washington Post - canonical example of a scaled / compressed y-axis distorting interpretation.
+
+### Bad-Chart Galleries
+
+- [Karl Broman – The Top Ten Worst Graphs](https://www.biostat.wisc.edu/~kbroman/topten_worstgraphs/) - a curated gallery of poorly designed graphs from the scientific literature with critiques.
+- [Junk Charts](https://www.junkcharts.com/) by Kaiser Fung - long-running blog critiquing real-world charts and proposing improved redesigns.
+- [r/dataisugly](https://www.reddit.com/r/dataisugly/) - community-curated subreddit collecting bad data visualizations from the wild.
+- [viz.wtf](http://viz.wtf/) - a curated gallery of egregiously bad data visualizations.
 
 ## Collections
+
+### Healthcare-Specific
 
 - [EHR STAR](https://ehr.wangqiru.com/table/) by Qiru Wang - a collection of literature and datasets included in the state-of-the-art (STAR) report, [EHR STAR: The State-of-the-art in Interactive EHR and PopHR Visualization](https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14424)
 - [GenoCAT](http://genocat.tools) by [Gehlenborg Lab](http://gehlenborglab.org) - a database of genomic visualization tools
 - [Visualization Design Studio](https://tinyurl.com/y6rlv72a) led by [Adriana Arcia](https://www.nursing.columbia.edu/profile/adriana-arcia-phd) more info on this [page](https://vis-studio.mailchimpsites.com).
   - [A list of Online Visualization Resources](https://drive.google.com/file/d/1IlxBx_5JEZ2wVLcRXBmYz99nD2wYZuaZ/view) by Adriana Arcia
+
+### Examples & Demos (Why Visualization Matters)
+
+- [100 Data Viz Project](https://100.datavizproject.com/) - 100 different visualizations of the same dataset, illustrating how chart choice changes the story.
+- [Anscombe's Quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet) - four datasets with near-identical summary statistics but very different visual distributions; classic demonstration of why summary stats alone are insufficient.
+- [One Dataset Visualized 25 Ways](https://flowingdata.com/2017/01/24/one-dataset-visualized-25-ways/) by Nathan Yau on FlowingData - shows how the same data can be communicated very differently across 25 chart forms.
+- [Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing](https://doi.org/10.1371/journal.pbio.1002128) by Justin Matejka & George Fitzmaurice (Autodesk Research) - the "DataSaurus dozen" extension of Anscombe's quartet, demonstrating that statistically identical datasets can look radically different.
+
+### General Data-Viz Blogs & Resource Sites
+
+- [blog.datawrapper.de](https://blog.datawrapper.de/) - Datawrapper's blog with practical articles on chart design, color, and storytelling.
+- [FlowingData](https://flowingdata.com/) by Nathan Yau - long-running blog on data visualization design, tutorials, and projects.
+- [Perceptual Edge](https://www.perceptualedge.com/) by Stephen Few - articles and resources on quantitative information presentation.
+- [Towards Data Science](https://towardsdatascience.com/) - Medium publication with many data-visualization tutorials and case studies (not specific to healthcare).
+- [Visualising Data](https://www.visualisingdata.com/) by Andy Kirk - resources, references, and commentary on data visualization practice.
 
 ## Conferences
 
@@ -110,6 +151,8 @@ Related Awesome lists:
 
 ### Clinical Decision Support
 
+- [Best practices for data visualization: creating and evaluating a report for an evidence-based fall prevention program](https://doi.org/10.1093/jamia/ocz190) by Srijesa Khasnabish, Zoe Burns, Madeline Couch, Mary Mullin, Randall Newmark, Patricia C Dykes from Brigham and Women's Hospital on J Am Med Inform Assoc. 2020;27(2):308-314. doi: 10.1093/jamia/ocz190 - Iterative design and evaluation of a fall-prevention dashboard report; identifies best practices for clinician-facing data displays (high data-ink ratio, conservative color use, clear performance-vs-goal communication).
+
 ### Visual Analytics System
 
 ### Review Paper
@@ -122,9 +165,14 @@ Related Awesome lists:
 ## Tools
 
 - [CadenceEVA](https://github.com/VACLab/CadenceEVA) - a visual analytics platform for event sequence analysis
+- [Coblis – Color Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) - upload an image and preview how it appears under different forms of color vision deficiency.
+- [Color Oracle](http://www.colororacle.org/) - free desktop color-blindness simulator (macOS / Windows / Linux) that applies a full-screen filter for designers.
 - [Colorblind palette comparison](https://davidmathlogic.com/colorblind/) by David Nichols - an interactive tool to preview and compare categorical color palettes under different types of color vision deficiency.
+- [Data Viz Project](https://datavizproject.com/) - a catalog of chart types with filters by data shape, function, and family, useful for picking the right chart.
+- [Data Visualisation Catalogue](https://datavizcatalogue.com/index.html) by Severino Ribecca - a catalog of visualization methods organized by the task they support.
 - [Datawrapper - A detailed guide to colors in data vis style guides](https://www.datawrapper.de/blog/colors-for-data-vis-style-guides) - an extensive reference on building organizational color palettes for data visualization.
 - [Datawrapper - How to pick more beautiful colors for your data visualizations](https://www.datawrapper.de/blog/beautifulcolors) - practical guidance on choosing accessible and aesthetically effective colors for charts.
+- [From Data to Viz](https://www.data-to-viz.com/) - a decision-tree explorer that recommends suitable chart types based on the structure of your data, with code examples.
 - [PyHealth](https://github.com/sunlabuiuc/PyHealth) - a Python Library for Healthcare Predictive Tasks
 - [SandDance](https://microsoft.github.io/SandDance/app/) - SandDance is a web-based application that enables you to more easily explore, identify, and communicate insights about tabular data.
 
